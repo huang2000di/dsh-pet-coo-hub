@@ -1,0 +1,40 @@
+{
+    "name":  "dsh-shared-memory",
+    "version":  "0.7.0",
+    "description":  "把四方记忆汇成一份：清洗、去重、归档、搜索筛选、可编辑人设，并且每天给项目记忆写一条“家人日报”。",
+    "type":  "module",
+    "main":  "lib/index.js",
+    "exports":  {
+                    ".":  "./lib/index.js",
+                    "./client":  "./client.js",
+                    "./cordis.patch.yml":  "./cordis.patch.yml",
+                    "./package.json":  "./package.json"
+                },
+    "files":  [
+                  "lib",
+                  "client.js",
+                  "cordis.patch.yml",
+                  "README.md"
+              ],
+    "keywords":  [
+                     "dsh",
+                     "dsh-plugin",
+                     "memory",
+                     "deepseek-harness"
+                 ],
+    "license":  "MIT",
+    "engines":  {
+                    "node":  "\u003e=20"
+                },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web",
+                               "inject":  [
+
+                                          ]
+                           }
+            }
+}
