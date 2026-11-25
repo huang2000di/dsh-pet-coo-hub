@@ -1,0 +1,7 @@
+- insert:
+    - id: shared-memory
+      name: dsh-shared-memory
+      config:
+        enabled: true
+        ingestIntervalSec: 60
+        recentLimit: 40
